@@ -36,7 +36,7 @@ The cleaning task is composed as several task including:
 
 # How to Run
 Open terminal and start the ShellCleaner.sh file via terminal, change the execute permission if necessary using chmod.
-*.* Make sure the script are in the same directory as the raw data.
+- Make sure the script are in the same directory as the raw data.
 
 
 
