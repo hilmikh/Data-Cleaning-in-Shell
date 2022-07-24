@@ -1,9 +1,9 @@
 # Data-Cleaning-in-Shell
 
-# Project Purpose
+## Project Purpose
 The purpose of this project is to fulfill the 4th assignment for the sql/shell subject in pacmann data analyst bootcamp program
 
-# Task
+## Task
 The task of this assignment is to clean [e-commerce traffic data](https://drive.google.com/file/d/1rKkUQU-sXIDka3rVNBahp6q3wDhrPY-1/view) for period October 2019 and November 2019 by using tools namely Bash and csvkit and save the command in .sh file.
 The cleaning task is composed as several task including:
 1. Merging two csv file (october file and november file) into one.
