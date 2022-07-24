@@ -34,7 +34,7 @@ The cleaning task is composed as several task including:
   rm csvstack.csv csvcut.csv csvgrep.csv csvsql1.csv
 6. Create bash script for command above using editor started with shebang
 
-# How to Run
+## How to Run
 Open terminal and start the ShellCleaner.sh file via terminal, change the execute permission if necessary using chmod.
 - Make sure the script are in the same directory as the raw data.
 
