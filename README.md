@@ -7,9 +7,9 @@ The purpose of this project is to fulfill the 4th assignment for the sql/shell s
 The task of this assignment is to clean e-commerce traffic data for period October 2019 and November 2019 by using tools namely Bash and csvkit and save the command in .sh file.
 The cleaning task is composed as several task including:
 1. Merging two csv file (october file and november file) into one.
-  *.* This task performed by using csvstack command:
-  csvstack 2019-Oct-sample.csv 2019-Nov-sample.csv > csvstack.csv
-    *.* result:
+  - This task performed by using csvstack command:
+    csvstack 2019-Oct-sample.csv 2019-Nov-sample.csv > csvstack.csv
+    - result:
     ![alt text](https://github.com/hilmikh/Data-Cleaning-in-Shell/blob/main/Screenshot/res_csvstack.png)
 2. Filtering relevant column for product analysis purposes:
   *.* This task performed by using csvcut command:
