@@ -23,10 +23,10 @@ The cleaning task is composed as several task including:
     ![alt text](https://github.com/hilmikh/Data-Cleaning-in-Shell/blob/main/Screenshot/res_csvgrep.png)
 4. Performing data/column splitting for category_code column into category and product_code
   - This task performed by using csvsql which able to receive sql command:
-    - csvsql --query "SELECT event_time,event_type,product_id,category_id,brand,price, SUBSTR(category_code,1,INSTR(category_code,'.')-1) as category,           SUBSTR(category_code, INSTR(category_code,'.')+1, LENGTH(category_code)) as product_name FROM csvgrep" csvgrep.csv > csvsql1.csv
+    - csvsql --query "SELECT event_time, event_type, product_id, category_id, brand, price, SUBSTR(category_code,1,INSTR(category_code,'.')-1) as category,       SUBSTR(category_code, INSTR(category_code,'.')+1, LENGTH(category_code)) as product_name FROM csvgrep" csvgrep.csv > csvsql1.csv
      - result:
     ![alt text](https://github.com/hilmikh/Data-Cleaning-in-Shell/blob/main/Screenshot/res_csvsql1.png)
-    - csvsql --query "SELECT event_time,event_type,product_id,category_id,brand,price,category,         SUBSTR(product_name, INSTR(product_name,'.')+1, LENGTH(product_name)) as product_name FROM csvsql1" csvsql1.csv > csvfinal.csv
+    - csvsql --query "SELECT event_time, event_type, product_id, category_id, brand, price, category, SUBSTR(product_name, INSTR(product_name,'.')+1,             LENGTH(product_name)) as product_name FROM csvsql1" csvsql1.csv > csvfinal.csv
      - result:
     ![alt text](https://github.com/hilmikh/Data-Cleaning-in-Shell/blob/main/Screenshot/res_csvsql2.png)
 5. Delete unnecessary data
